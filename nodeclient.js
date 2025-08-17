@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const SEED_NODE = "http://localhost:3000"; // replace with your Render URL after deployment
+const SEED_NODE = "https://africoin-seed-node-c641.onrender.com"; // replace with your Render URL after deployment
 
 let wallet = null;
 
