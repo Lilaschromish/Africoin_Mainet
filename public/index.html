@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Africoin Wallet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Africoin Wallet</h1>
+
+    <!-- Wallet section -->
+    <div id="wallet-section">
+      <button id="generateWalletBtn">Generate Wallet</button>
+      <button id="restoreWalletBtn">Restore Wallet</button>
+
+      <div id="walletInfo" class="hidden">
+        <p><strong>Address:</strong> <span id="walletAddress"></span></p>
+        <p><strong>Mnemonic:</strong> <span id="walletMnemonic"></span></p>
+        <p><strong>Public Key:</strong> <span id="walletPublicKey"></span></p>
+      </div>
+    </div>
+
+    <!-- Balance and send section -->
+    <div id="balance-section" class="hidden">
+      <h2>Balance</h2>
+      <p id="balance">0 AFC</p>
+
+      <h2>Send AFC</h2>
+      <input type="text" id="recipient" placeholder="Recipient address" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <button id="sendBtn">Send</button>
+      <p id="txStatus"></p>
+    </div>
+  </div>
+
+  <script type="module" src="wallet.js"></script>
+</body>
+</html>
